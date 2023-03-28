@@ -16,7 +16,7 @@ const name = userName();
 console.log('What is the result of the expression?');
 const sign = ['+', '-', '*'];
 
-//tru resault
+//tru result
 const truResult = (randomSign, number1, number2) => {
     if (randomSign === '+') {
         let result = number1 + number2;
