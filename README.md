@@ -3,3 +3,4 @@
 <a href="https://codeclimate.com/github/SevHope/frontend-project-44/test_coverage"><img src="https://api.codeclimate.com/v1/badges/df2848d6a36816ac6653/test_coverage" /></a>
 <a href="https://codeclimate.com/github/SevHope/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/df2848d6a36816ac6653/maintainability" /></a>
 <a href="https://asciinema.org/a/570800"></a>
+https://asciinema.org/a/571366
