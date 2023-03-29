@@ -4,3 +4,4 @@
 <a href="https://codeclimate.com/github/SevHope/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/df2848d6a36816ac6653/maintainability" /></a>
 https://asciinema.org/a/570800
 https://asciinema.org/a/571366
+https://asciinema.org/a/572011
