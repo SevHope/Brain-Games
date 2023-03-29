@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+//3 steps of the game
 const startGame = (gameTask, gameRules) => {
 console.log('Welcome to the Brain Games!');
 const nameUser = readlineSync.question('May I have your name?');

@@ -1,17 +1,11 @@
-import readlineSync from 'readline-sync';
+import startGame from '../index.js';
 import randomNumber from '../randomNumber.js';
 
-//Greetings
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name?');
-console.log(`Hello, ${name}!`);
+//Games'task
+const gameTask = ('What is the result of the expression?');
 
-//Start game, constants
-const gameRules = ('What is the result of the expression?')
-console.log(gameRules);
+//Meaning of the game
 const sign = ['+', '-', '*'];
-
-//tru result
 const truResult = (randomSign, number1, number2) => {
     if (randomSign === '+') {
         let result = number1 + number2;
@@ -24,24 +18,17 @@ const truResult = (randomSign, number1, number2) => {
         return result};
 };
 
-//3 steps of game
-const calcGame = (answer, result) => {
-    for (let i = 0; i < 3; i += 1) {
+//Game's rules
+const gameRules = () => {
     const number1 = randomNumber(1, 10);
     const number2 = randomNumber(1, 10);
     const randomIndex = randomNumber(0, 3);
     const randomSign = sign[randomIndex];
-    const example = `${number1}${randomSign}${number2}`;
-    const question = (`Question: ${example}`);
-    console.log(question);
-    answer = readlineSync.question('Your answer: ');
-    result = String(truResult(randomSign, number1, number2));
-        if (answer === result) {
-            console.log("Correct!");
-        }
-        else {console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}!`);
-        return;}
+    const question = `${number1}${randomSign}${number2}`;
+    const result = truResult(randomSign, number1, number2);
+    return [question, result];
 };
-console.log(`Congratulations, ${name}!`)
-};
-export default calcGame;
+
+export default () => {
+    startGame(gameTask, gameRules);
+  };
