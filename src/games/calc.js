@@ -3,17 +3,12 @@ import randomNumber from '../randomNumber.js';
 
 //Greetings
 console.log('Welcome to the Brain Games!');
-const userName = () => {
-    const name = readlineSync.question('May I have your name?');
-    console.log(`Hello, ${name}!`);
-    return name;
-};
-
-//User name
-const name = userName();
+const name = readlineSync.question('May I have your name?');
+console.log(`Hello, ${name}!`);
 
 //Start game, constants
-console.log('What is the result of the expression?');
+const gameRules = ('What is the result of the expression?')
+console.log(gameRules);
 const sign = ['+', '-', '*'];
 
 //tru result
@@ -31,7 +26,7 @@ const truResult = (randomSign, number1, number2) => {
 
 //3 steps of game
 const calcGame = (answer, result) => {
-    for (let score = 0; score < 3; score += 1) {
+    for (let i = 0; i < 3; i += 1) {
     const number1 = randomNumber(1, 10);
     const number2 = randomNumber(1, 10);
     const randomIndex = randomNumber(0, 3);
