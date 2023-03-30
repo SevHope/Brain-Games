@@ -24,7 +24,7 @@ const gameRules = () => {
     const number2 = randomNumber(1, 10);
     const randomIndex = randomNumber(0, 3);
     const randomSign = sign[randomIndex];
-    const question = `${number1}${randomSign}${number2}`;
+    const question = `${number1} ${randomSign} ${number2}`;
     const result = truResult(randomSign, number1, number2);
     return [question, result];
 };
