@@ -14,34 +14,34 @@ npm link
 </pre>
 <h2>Games:</h2>
 <ul>
-<li>Calculator. Arithmetic expressions to be evaluated.</li>
+<li><b>Calculator.</b> Arithmetic expressions to be evaluated.</li>
 <p>The player needs to calculate the sum, difference or addition of two numbers</p>
-<h3>Start game</h3>
+<h4>Start game</h4>
 <pre>
 brain-calc
 </pre>
 <p><a href="https://asciinema.org/a/572639" target="_blank"><img src="https://asciinema.org/a/572639.svg" /></a></p>
-<li>Progression. Search for missing numbers by number order.</li>
-<h3>Start game</h3>
+<li><b>Progression.</b> Search for missing numbers by number order.</li>
+<h4>Start game</h4>
 <pre>
 brain-progression
 </pre>
 <p><a href="https://asciinema.org/a/572641" target="_blank"><img src="https://asciinema.org/a/572641.svg" /></a></p>
-<li>Definition of an even number.</li>
-<h3>Start game</h3>
+<li><b>Even number.</b>Definition of an even number.</li>
+<h4>Start game</h4>
 <pre>
 brain-even
 </pre>
 <p><a href="https://asciinema.org/a/572588" target="_blank"><img src="https://asciinema.org/a/572588.svg" /></a></p>
-<li>Finding the Greatest Common Divisor.</li>
-<h3>Start game</h3>
+<li><b>Finding the Greatest Common Divisor.</b></li>
+<h4>Start game</h4>
 <pre>
 brain-gcd
 </pre>
 <p><a href="https://asciinema.org/a/572589" target="_blank"><img src="https://asciinema.org/a/572589.svg" /></a></p>
-<li>Prime numbers.</li>
+<li><b>Prime numbers.</b></li>
 <p>The player needs to determine a prime number.</p>
-<h3>Start game</h3>
+<h4>Start game</h4>
 <pre>
 brain-prime
 </pre>
