@@ -2,6 +2,7 @@
 [![Actions Status](https://github.com/SevHope/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/SevHope/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/SevHope/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/df2848d6a36816ac6653/maintainability" /></a>
 <h1>Brain games</h1>
+<a href="https://asciinema.org/a/572629" target="_blank"><img src="https://asciinema.org/a/572629.svg" /></a>
 <p>Brain games is a set of five console games built using popular mobile brain training apps.</p>
 <p>Each game asks questions that need to be answered. After three correct answers, the game is considered to be completed. Incorrect results end the game and return it again.</p>
 <h2>Games:</h2>
