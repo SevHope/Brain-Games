@@ -8,17 +8,14 @@ const gameTask = ('What is the result of the expression?');
 const sign = ['+', '-', '*'];
 const truResult = (randomSign, number1, number2) => {
   if (randomSign === '+') {
-    const result = number1 + number2;
-    return result;
+    return number1 + number2;
   }
   if (randomSign === '-') {
-    const result = number1 - number2;
-    return result;
+    return number1 - number2;
   }
   if (randomSign === '*') {
-    const result = number1 * number2;
-    return result;
-  }
+    return number1 * number2;
+  } return ('Error');
 };
 
 // Game's rules

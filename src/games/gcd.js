@@ -1,4 +1,6 @@
+/* eslint-disable no-param-reassign */
 import randomNumber from '../randomNumber.js';
+
 import startGame from '../index.js';
 
 // Games'task
@@ -6,7 +8,7 @@ const gameTask = ('Find the greatest common divisor of given numbers.');
 
 // Meaning of the game
 const brainGcd = (number1, number2) => {
-  while (number1 != number2) {
+  while (number1 !== number2) {
     if (number1 > number2) {
       number1 -= number2;
     } else {
