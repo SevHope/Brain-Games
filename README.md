@@ -5,12 +5,13 @@
 <p>Brain games is a set of five console games built using popular mobile brain training apps.</p>
 <p>Each game asks questions that need to be answered. After three correct answers, the game is considered to be completed. Incorrect results end the game and return it again.</p>
 <h2>Install</h2>
+Make sure you have installed Node.js version 13 or higher.
+Clone repo, change directory and install packages:
 <pre>
 git clone https://github.com/SevHope/frontend-project-44
 cd frontend-project-44
 make install
 npm install
-npm link
 </pre>
 <h2>Games:</h2>
 <ul>
