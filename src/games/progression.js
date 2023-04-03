@@ -12,7 +12,7 @@ const gameRules = () => {
   const firstNumber = randomNumber(1, 50);
   const progressionStep = randomNumber(2, 5);
   const progressionLength = randomNumber(5, 10);
-  
+
   for (let i = 0; i < progressionLength; i += 1) {
     progression[i] = firstNumber + (progressionStep * (i - 1));
   }
