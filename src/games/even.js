@@ -6,12 +6,12 @@ import startGame from '../index.js';
 export const gameTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 // Meaning of the game
-const getEvenNumber = (number) => number % 2 === 0;
+const startEvenNumber = (number) => number % 2 === 0;
 
 // Game's rules
 const getGameRules = () => {
   const number = getRandomNumber(1, 100);
-  const truAnswer = getEvenNumber(number) ? 'yes' : 'no';
+  const truAnswer = startEvenNumber(number) ? 'yes' : 'no';
   return [number, truAnswer];
 };
 
