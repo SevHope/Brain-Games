@@ -6,7 +6,7 @@ const gameTask = ('What is the result of the expression?');
 
 // Meaning of the game
 const sign = ['+', '-', '*'];
-const getTruResult = (randomSign, number1, number2) => {
+const startCalcGame = (randomSign, number1, number2) => {
   switch (randomSign) {
     case '+':
       return number1 + number2;
@@ -15,7 +15,7 @@ const getTruResult = (randomSign, number1, number2) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error(`Unkown '${randomSign}'!`);
+      throw new Error(`Unknown '${randomSign}'!`);
   }
 };
 
@@ -26,7 +26,7 @@ const getGameRules = () => {
   const randomIndex = getRandomNumber(0, 3);
   const randomSign = sign[randomIndex];
   const question = `${number1} ${randomSign} ${number2}`;
-  const result = getTruResult(randomSign, number1, number2);
+  const result = startCalcGame(randomSign, number1, number2);
   return [question, result];
 };
 
