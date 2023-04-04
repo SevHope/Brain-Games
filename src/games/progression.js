@@ -10,7 +10,7 @@ const getProgression = (firstNumber, progressionStep, progressionLength) => {
   for (let i = 0; i < progressionLength; i += 1) {
     progression[i] = firstNumber + (progressionStep * (i - 1));
   }
-return progression;
+  return progression;
 };
 
 // Game's rules
