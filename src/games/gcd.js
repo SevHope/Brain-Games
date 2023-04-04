@@ -1,13 +1,13 @@
 /* eslint-disable no-param-reassign */
-import randomNumber from '../randomNumber.js';
+import getRandomNumber from '../randomNumber.js';
 
 import startGame from '../index.js';
 
 // Games'task
-const gameTask = ('Find the greatest common divisor of given numbers.');
+const gameTask = 'Find the greatest common divisor of given numbers.';
 
 // Meaning of the game
-const brainGcd = (number1, number2) => {
+const startBrainGcd = (number1, number2) => {
   while (number1 !== number2) {
     if (number1 > number2) {
       number1 -= number2;
@@ -20,13 +20,13 @@ const brainGcd = (number1, number2) => {
 };
 
 // Game's rules
-const gameRules = () => {
-  const number1 = randomNumber(1, 100);
-  const number2 = randomNumber(1, 100);
+const getGameRules = () => {
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
-  const result = brainGcd(number1, number2);
+  const result = startBrainGcd(number1, number2);
   return [question, result];
 };
 export default () => {
-  startGame(gameTask, gameRules);
+  startGame(gameTask, getGameRules);
 };

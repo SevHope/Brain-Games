@@ -1,12 +1,12 @@
-import randomNumber from '../randomNumber.js';
+import getRandomNumber from '../randomNumber.js';
 
 import startGame from '../index.js';
 
 // Games'task
-export const gameTask = ('Answer "yes" if given number is prime. Otherwise answer "no".');
+export const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 // Meaning of the game
-const primeNumber = (number) => {
+const getPrimeNumber = (number) => {
   if (number < 2) {
     return false;
   }
@@ -19,12 +19,12 @@ const primeNumber = (number) => {
 };
 
 // Game's rules
-const gameRules = () => {
-  const number = randomNumber(1, 100);
-  const truAnswer = primeNumber(number) ? 'yes' : 'no';
+const getGameRules = () => {
+  const number = getRandomNumber(1, 100);
+  const truAnswer = getPrimeNumber(number) ? 'yes' : 'no';
   return [number, truAnswer];
 };
 
 export default () => {
-  startGame(gameTask, gameRules);
+  startGame(gameTask, getGameRules);
 };
