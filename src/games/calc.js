@@ -16,7 +16,7 @@ const getTruResult = (randomSign, number1, number2) => {
       return number1 * number2;
     default:
       throw new Error(`Unkown '${randomSign}'!`);
-  };
+  }
 };
 
 // Game's rules
