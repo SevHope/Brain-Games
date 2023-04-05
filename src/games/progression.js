@@ -8,7 +8,7 @@ const gameTask = 'What number is missing in the progression?';
 const getProgression = (firstNumber, progressionStep, progressionLength) => {
   const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    number = firstNumber + (progressionStep * i);
+    const number = firstNumber + (progressionStep * i);
     progression.push(number)
   }
   return progression;
