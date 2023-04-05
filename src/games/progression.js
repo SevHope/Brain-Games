@@ -9,7 +9,7 @@ const getProgression = (firstNumber, progressionStep, progressionLength) => {
   const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
     const number = firstNumber + (progressionStep * i);
-    progression.push(number)
+    progression.push(number);
   }
   return progression;
 };
