@@ -20,7 +20,7 @@ const startCalcGame = (randomSign, number1, number2) => {
 };
 
 // Game's rules
-const getGameRules = () => {
+const getRoundData = () => {
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
   const randomIndex = getRandomNumber(0, 2);
@@ -31,5 +31,5 @@ const getGameRules = () => {
 };
 
 export default () => {
-  startGame(gameTask, getGameRules);
+  startGame(gameTask, getRoundData);
 };

@@ -6,7 +6,7 @@ import startGame from '../index.js';
 export const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 // Meaning of the game
-const getPrimeNumber = (number) => {
+const isPrimeNumber = (number) => {
   if (number < 2) {
     return false;
   }
@@ -19,12 +19,12 @@ const getPrimeNumber = (number) => {
 };
 
 // Game's rules
-const getGameRules = () => {
+const getRoundData = () => {
   const number = getRandomNumber(1, 100);
-  const truAnswer = getPrimeNumber(number) ? 'yes' : 'no';
-  return [number, truAnswer];
+  const correctAnswer = isPrimeNumber(number) ? 'yes' : 'no';
+  return [number, correctAnswer];
 };
 
 export default () => {
-  startGame(gameTask, getGameRules);
+  startGame(gameTask, getRoundData);
 };

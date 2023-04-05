@@ -8,24 +8,25 @@ const gameTask = 'What number is missing in the progression?';
 const getProgression = (firstNumber, progressionStep, progressionLength) => {
   const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    progression[i] = firstNumber + (progressionStep * (i - 1));
+    number = firstNumber + (progressionStep * i);
+    progression.push(number)
   }
   return progression;
 };
 
 // Game's rules
-const getGameRules = () => {
+const getRoundData = () => {
   const firstNumber = getRandomNumber(1, 50);
   const progressionStep = getRandomNumber(2, 5);
   const progressionLength = getRandomNumber(5, 10);
   const progression = getProgression(firstNumber, progressionStep, progressionLength);
   const hiddenNumber = getRandomNumber(0, (progression.length - 1));
-  const truAnswer = progression[hiddenNumber];
+  const correctAnswer = progression[hiddenNumber];
   progression[hiddenNumber] = '..';
   const question = progression.join(' ');
-  return [question, truAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {
-  startGame(gameTask, getGameRules);
+  startGame(gameTask, getRoundData);
 };
