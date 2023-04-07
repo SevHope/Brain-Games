@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 
-// 3 steps of the game
 const stepsOfGame = 3;
 const startGame = (gameTask, getRoundData) => {
   console.log('Welcome to the Brain Games!');

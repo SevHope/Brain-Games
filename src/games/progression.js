@@ -1,10 +1,8 @@
 import getRandomNumber from '../randomNumber.js';
 import startGame from '../index.js';
 
-// Games'task
 const gameTask = 'What number is missing in the progression?';
 
-// Meaning of the game
 const getProgression = (firstNumber, progressionStep, progressionLength) => {
   const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
@@ -14,7 +12,6 @@ const getProgression = (firstNumber, progressionStep, progressionLength) => {
   return progression;
 };
 
-// Game's rules
 const getRoundData = () => {
   const firstNumber = getRandomNumber(1, 50);
   const progressionStep = getRandomNumber(2, 5);
